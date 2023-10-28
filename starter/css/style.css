@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #DDB8A6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header{
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-direction: row;
+
+}
+
+.Logo-text a{
+  font-size: 48px; 
+  color: #de5d83;
+  text-decoration-line: none;
+}
+
+.Logo-text a:hover{
+  font-size: 52px;
+  color: #a94064;
+}
+
+.Middle-initals{
+  color: #a94064;
+
+}
+
+.Middle-initals:hover {
+  color: #de5d83;
+}
+
+.Navigation ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header ul{
+  list-style-type: none;
+}
+
+header ul li a{
+  color: #989E8B;
+  display: inline-block;
+  margin: 2px;
+  padding: 5px;
+  font-size: 18px;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+#link1:hover, #link2:hover, #link3:hover, #Download1:hover{
+  font-size: 22px;
+  font-weight: bold;
+  color: #946656;
+  text-decoration-line: none;
+}
