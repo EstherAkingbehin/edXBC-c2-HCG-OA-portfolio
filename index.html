@@ -6,35 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>O E AKINGBEHIN</title>
-  <link rel="stylesheet" href="./starter/css/style.css" />
+  <link rel="stylesheet" href="./starter/css/style2.css" />
+  <script src="https://kit.fontawesome.com/a4ad946983.js"></script>
 </head>
+
 
 <body>
   <!-- main logo / nav -->
-  <header>
+  <header class="Header">
 
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="close"></i>
+    </label>
+   
+    <div>
     <h1 class="Logo-text">
       <a href="./index.html"> O <span class="Middle-initals">E </span> AKINGBEHIN</a>
     </h1>
+    </div>
 
     <!--Navigation-->
     <nav class ="Navigation">
 
       <ul>
         <li>
-          <a id="link1" href="#About-Me">About Me</a>
+          <a id="link1" href="#Section1">About Me</a>
         </li>
 
         <li>
-         <a id="link2" href="#Work">Work</a>
+         <a id="link2" href="#Section2">Work</a>
         </li>
 
         <li>
-          <a  id="link3" href="#Contact-Me" >Contact Me</a>
+          <a  id="link3" href="#Section3" >Contact Me</a>
         </li>
 
         <li>
-          <a id="Download1" href="#Resume">Resume</a>
+          <a id="Download1" href="#section4">Resume</a>
         </li>
       </ul>
 
@@ -44,26 +54,154 @@
 
   <!-- hero banner -->
   <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
+      <figure>
+        <div class="hero-image">
+        <img src="./starter/images/02-hero-bg.jpg" alt="hero image">
+        </div>
+      <div>
+        <h2>Portfolio Site</h2>
+      </div>
+    </figure>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h2 id = "About-Me">About Me</h2>
+    <section class="page-section" id="Section1">
+
+      <div class="about">
+        <h2>About <br>Me</h2>
+      </div>
+
+      <div class = "About-Me"> 
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Cupiditate sapiente voluptatem veritatis temporibus delectus maxime harum blanditiis hic iste, 
+          saepe expedita porro modi officia id voluptates sed autem aut obcaecati..
+        <br> 
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, sed corporis. 
+        Id odio earum facilis quos aspernatur saepe omnis impedit vel eveniet placeat nihil quas architecto, 
+        molestias inventore fuga. Cupiditate?
+        <br>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Eius iusto nisi hic et distinctio, odit vitae, pariatur velit tempora quo 
+        sunt animi reprehenderit expedita nostrum ab odio cupiditate aspernatur rerum!
+        </p>
+      </div>
+
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <section class="page-section" id="Section2">
+
+      <div class="Work">
+        <h2>Work</h2>
+      </div>
+
+      <div class="Work-section">
+
+          <div class= "Projects" id="work1">
+
+         <a href="https://github.com/EstherAkingbehin/edXBC-c2-HCG-OA-portfolio">
+            <div class="work-title">
+              <h4> Surf Report</h4>
+              <p>MERN Stack</p>
+            </div>
+        </a>
+
+          <img src="./starter/images/02-run-buddy.jpg">
+        </div>
+
+        <div class= "Projects" id="work2">
+
+          <a href="https://github.com/EstherAkingbehin/edXBC-c2-HCG-OA-portfolio">
+            <div class="work-title">
+              <h4> LED Wall</h4>
+              <p>Node/loT</p>
+            </div>
+          </a>
+
+          <img src="./starter/images/02-portfolio-1.jpg">
+        </div>
+
+        <div class= "Projects" id="work3">
+
+          <a href="https://github.com/EstherAkingbehin/edXBC-c2-HCG-OA-portfolio">
+            <div class="work-title">
+              <h4> Calculator</h4>
+              <p>React/JavaScript/CSS</p>
+            </div>
+          </a>
+
+        <img src="./starter/images/02-portfolio-2.jpg">
+        </div>
+
+        <div class= "Projects" id="work4">
+
+          <a href="https://github.com/EstherAkingbehin/edXBC-c2-HCG-OA-portfolio">
+            <div class="work-title">
+              <h4> Pastel Puzzels</h4>
+              <p>MERN Stack</p>
+            </div>
+          </a>
+
+          <img src="./starter/images/02-portfolio-3.jpg">
+        </div>
+
+        <div class= "Projects" id="work5">
+
+          <a href="https://github.com/EstherAkingbehin/edXBC-c2-HCG-OA-portfolio">
+          <div class="work-title">
+            <h4>Run Buddy</h4>
+            <p>HTML/CSS</p>
+          </div>
+          </a>
+
+        <img src="./starter/images/02-portfolio-4.jpg">
+        </div>
+
+      </div>
+       
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+    <section class="page-section contact" id="Section3">
+
+      <div class="Contact">
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="Contact-Me">
+
+        <div class="Mobile">
+        <p> <a href="https://web.whatsapp.com/">
+          +447460728872</a> </p>
+        </div>
+
+        <div class="Email">
+        <p><a href="https://accounts.google.com/InteractiveLogin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=AVQVeywqDneXMZlCxv_TPbKb24YC6T2YPlBnkDZ1L4gWOE5tcHVaG5ckb9f0jwieQactkH7tlmilZA&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin"> 
+          estherakin321@gmail.com </a> </p>
+        </div>
+
+        <div class="Repository">
+        <p> <a href="https://github.com/EstherAkingbehin/edXBC-c2-HCG-OA-portfolio"> 
+          GitHub </a> </p>
+        </div>
+
+        <div class="LinkedIn">
+        <p><a href="https://gb.linkedin.com/"> 
+          LinkedIn </a></p>
+        </div>
+
+        <div class="Youtube">
+        <p><a href="https://www.youtube.com/" >
+          Youtube </a></p>
+        </div>
+      </div>
+
     </section>
+
   </main>
 </body>
 
