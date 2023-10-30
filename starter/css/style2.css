@@ -1,185 +1,166 @@
-* {
-    box-sizing: border-box;
-    text-decoration: none;
+* { /* Applies to all elements*/
+  box-sizing: border-box;
+  text-decoration: none;
 }
   
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5;
-    background-color: #DDB8A6;
-  
+body { /*Applies to body*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #e7c6b5;
 }
   
 h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
   
-  p {
-    margin: 0;
+p {
+  margin: 0;
 }
   
-  header{ /*this is nav in the video*/
-    background-color: whitesmoke;
-    display: inline-block;
-    width: 100%;
-    padding: 25px 80px;
-    height: 100Px;
-    position: relative;
+header{ /*Header is displayed in-line-block*/
+  background-color: rgb(250, 228, 228);
+  display: inline-block;
+  width: 100%;
+  padding: 25px 80px;
+  height: 100Px;
+  position: relative;
 }
 
 
-  .Logo-text{
-    float: left;
-    position: absolute;
-    top: 17px;
-    left: 8%;
-    font-size: 35px;;
-
+.Logo-text{ /*Logo is on the left */
+  float: left;
+  position: absolute;
+  top: 17px;
+  left: 8%;
+  font-size: 35px;;
 }
 
 header div{
-    width: 400px;
-    height: 85px;
-    position: absolute;
-    top: 10px;
-    margin-left: -83px;
-    border: 2px solid  #000;
-    border-radius: 20px 30px 25px 10px;
-    background-color: #d4a68f;
+  width: 400px;
+  height: 85px;
+  position: absolute;
+  top: 10px;
+  margin-left: -83px;
+  border: 2px solid  #e2dadf;
+  border-radius: 20px 30px 25px 10px;
+  background-color: #eee0d2;
 }
 
 .Logo-text a:hover{
   font-size: 42px;
-  color: #a94064;
+  color: #8b4860;
 }
 
 .Middle-initals:hover {
-    color: #de5d83;
+  color: #de5d83;
 }
   
 
-  .Logo-text a{
-    color: #de5d83;
-    text-decoration-line: none;
+.Logo-text a{
+  color: #de5d83;
+  text-decoration-line: none;
 }
 
-  .Middle-initals{
-    color: #a94064;
+.Middle-initals{
+  color: #a94064;
   
 }
 
-  nav ul{
-    float: right;
-    margin-right: 25px;
+nav ul{
+  float: right;
+  margin-right: 25px;
 }
 
-  nav ul li{
-    display: inline-block;
-    line-height: 40px;
-    margin: 0 5px;
+nav ul li{
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 5px;
 }
 
-  nav ul li a {
-    position: relative;
-    color: #de5d83;
-    font-size: 18px;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 5px 0;
+nav ul li a {
+  position: relative;
+  color: #de5d83;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 0;
 }
 
-  nav ul li a:before{
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 100%;
-    background: #de5d83;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform .4s linear;
+nav ul li a:before{ /*transition*/
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #7e344a;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
 }
 
-  nav ul li a:hover:before{
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-  label #btn,
-  label #close{
-    color: #946656;
-    font-size: 30px;
-    float: right;
-    line-height: 80px;
-    margin-right: 2px;
-
-    cursor: pointer;
-    display: none;
-}
-
-  #check{
-    display: none;
+nav ul li a:hover:before{ /* transition on hover*/
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .hero-banner {
-    width: 100%;
-    position: relative;
-    height: 50vh; /* 50% of the viewport height */
-    overflow: hidden; /* Ensure the image doesn't overflow the container */
-    display: flex;
-    align-items: flex-end; /* Align items to the bottom of the container */
-    justify-content: center;
-  }
+  width: 100%;
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end; 
+  justify-content: center;
+}
 
 .hero-image{
-    flex: 1;
-    display: flex; /* Use Flexbox for content layout */
-  flex-direction: column; /* Stack the items vertically */
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
 }
 
 
 section.hero-banner {
-    height: 50vh; /* 50% of the viewport height */
-    width: 100%; 
-    flex: 1; /* Make the image container take available vertical space */
+  height: 50vh; 
+  width: 100%; 
+  flex: 1;
   position: relative;
-  justify-content: flex-end; /* Horizontally center the image */
+  justify-content: flex-end;
   align-items: center; 
-  
 }
 
 .hero-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
 
 .hero-banner div h2{
-    position: absolute;
-    font-size: 35px;
-    border: 2px solid  #DDB8A6;
-    bottom: 20px; /* Adjust the distance from the bottom as needed */
-    right: 40px; /* Adjust the distance from the right as needed */
-    background-color: rgba(165, 163, 163, 0.5);
-    color: #893f04;
-    padding: 10px;
+  position: absolute;
+  font-size: 35px;
+  border: 2px solid  black;
+  bottom: 20px;
+  right: 40px;
+  background-color: rgba(134, 97, 111, 0.5);
+  color: #e67798;
+  padding: 10px;
 }
 
-main{
+
+main{ /* About me, work, contact me section */
   display: grid;
   grid-template-rows: 20% 65% 15%;
-  height:1000px;
+  height:800px;
   grid-gap: 100px;
   margin-top: 30px;
 }
@@ -207,10 +188,11 @@ main{
   align-items: center;
 }
 
-.about, .Work, .Contact {
+.about, .Work, .Contact { 
   text-align: right;
-  border-right: 3px solid #000;
+  border-right: 3px solid #663939;
   font-size: 50px;
+  color:#7e344a;
 }
 
 .about h2, .Work h2, .Contact h2{
@@ -224,7 +206,7 @@ main{
 
 }
 
-.Work-section{
+.Work-section{ /* Projects grid */
   display:grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
@@ -239,7 +221,7 @@ main{
 }
 
 .Projects{
-  overflow: hidden; /* Ensure the image doesn't overflow the container */
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,26 +229,24 @@ main{
 }
 
 .Projects img {
-  max-width: auto; /* Ensure images fit within their containers */
-  height: auto; /* Maintain aspect ratio */
+  max-width: auto; 
+  height: auto; 
   object-fit:cover;
-  filter: grayscale(100%); /* Make the image black and white */
+  filter: grayscale(100%); 
   transition: filter 0.3s
 }
 
 .Projects:hover img{
-  filter: grayscale(0%); /* Restore the image to full color on hover */
+  filter: grayscale(0%); 
 }
 
 #work1 {
   grid-area: work1;
   position: relative;
-
 }
 
 #work2{
   grid-area: work2;
-
 }
 
 #work3{
@@ -275,16 +255,14 @@ main{
 
 #work4{
   grid-area: work4;
-
 }
 
 #work5{
   grid-area: work5;
-
 }
 
 .work-section div{
-  border: 2px solid black
+  border: 2px solid rgb(0, 0, 0)
 }
 
 #work1, #work2, #work3, #work4, #work5{
@@ -317,15 +295,16 @@ main{
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
+  color: rgb(139, 107, 107)
 }
 
 .Contact-Me p a::before{
-  content: ''; /* Add content to the ::before pseudo-element */
-  position: absolute; /* Position the ::before pseudo-element absolutely relative to its parent */
-  width: 100%; /* Make the ::before element the same width as the link */
-  height: 2px; /* Set the height to define the thickness of the underline */
-  background: #de5d83; /* Define the color of the underline */
-  transform: scaleX(0); /* Start with no underline */
+  content: ''; 
+  position: absolute; 
+  width: 100%;
+  height: 2px;
+  background: #e9396e; 
+  transform: scaleX(0); 
   transform-origin: center;
   transition: transform 0.4s linear;
 }
@@ -336,192 +315,147 @@ main{
 }
 
 
-  @media (max-width: 1120px){
-    .Logo-text{
-        left:6%;
-        font-size: 30px;
-    }
+@media (max-width: 1120px){  /* 1120 viewport */
 
-    .header {
-        padding-top: 10px; /* Adjust the top padding to reduce space */
-    }
+  .Logo-text{
+    left:6%;
+    font-size: 30px;
+  }
 
-    header div{
-        width: 270px;
-        height: 85px;
-        position: absolute;
-        top: 6px;
-        margin-left: -83px;
-        border: 2px solid  #000;
-        border-radius: 20px 30px 25px 10px;
-        background-color: #d4a68f;
-    }
+  .header {
+    padding-top: 10px; 
+  }
 
-    .Logo-text a:hover{
-        font-size: 32px;
-        color: #a94064;
-      }
+  header div{
+    width: 270px;
+    top: 6px;
+    border-radius: 20px 30px 25px 10px;
+  }
 
-    .hero-banner {
-        margin-top: 2px; /* Adjust the top margin to reduce space */
-      }
-    .hero-banner div h2{
-        color: #f5f5f5;
-        font-size: 18px;
-    }
-    
-}
+  .Logo-text a:hover{
+    font-size: 32px;
+  }
 
-  @media (max-width: 944px){
-    .Logo-text{
-        font-size: 25px;
-        left:6%;
-        top: 10px;
-        width: 150px;
-    }
+  .hero-banner {
+    margin-top: 2px;
+  }
 
-    header div{
-        width: 270px;
-        height: 85px;
-        position: absolute;
-        top: 6px;
-        margin-left: -83px;
-        border: 2px solid  #000;
-        border-radius: 20px 30px 25px 10px;
-        background-color: #d4a68f; 
-    }
-
-    .Logo-text a:hover{
-        font-size: 26px;
-        color: #a94064;
-    }
-    
-
-    nav ul li a{
-        font-size: 17px;
-
-    }
-
-    .hero-banner {
-        margin-top: 10px; /* Adjust the top margin to reduce space */
-      }
-}
-
-    
-@media (max-width: 860px){
-    .header {
-        padding-top: 10px; /* Adjust the top padding to reduce space */
-    }
-
-    .Logo-text{
-        font-size: 18px;
-        left:2%;
-        top: 15px;
-        width: 100px;
-        padding: 0px 25px 5px 15px;
-    }
-
-    header div{
-        width: 165px;
-        height: 75px;
-        position: absolute;
-        top: 10px;
-        margin-left: -83px;
-        border: 2px solid  #000;
-        border-radius: 20px 30px 25px 10px;
-        background-color: #d4a68f; 
-    }
-
-    .Logo-text a:hover{
-        font-size: 20px;
-        color: #a94064;
-    }
-
-    label #btn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #d49b7e;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition:  all .5s;
-    }
-
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-
-    #check:checked ~ div{
-        left: 0;
-
-    }
-
-    #check:checked ~ label #btn{
-        display: none;
-    }
-
-    #check:checked ~ label #close{
-        display: block;
-    }
-
-    .hero-banner {
-        margin-top: 1px; /* Adjust the top margin to reduce space */
-    }
-
-
-    .hero-image{
-    height: 50vh;
-    width:100%
-    }
-
-    .hero-banner div h2{
-        font-size: 15px;
-        bottom: 10px; /* Adjust the distance from the bottom as needed */
-        right: 110px; /* Adjust the distance from the right as needed */
-        padding: 20px;
-    }
-
-    main{
-      height:1800px;
-      grid-gap: 150px;
-    }
-
-    .about, .Work, .contact{
-      text-align: right;
-      border-right: 3px solid #000;
-      font-size: 20px;
-    }
-
-    .About-Me p{
-      font-size: 12px;
-    
-}
-}
-
-@media (max-width: 400px){
   .hero-banner div h2{
-    bottom: 10px; /* Adjust the distance from the bottom as needed */
-    right: 200px;
+    font-size: 18px;
   }
+    
+}
 
+@media (max-width: 944px){ /* 944 viewport */
+  
+  .Logo-text{
+    font-size: 25px;
+    left:6%;
+    top: 10px;
+    width: 150px;
+  }
+  
+  header div{
+    width: 270px;
+    top: 6px; 
+  }
+  
+  .Logo-text a:hover{
+    font-size: 26px;
+  }
+    
+  nav ul li a{
+    font-size: 17px;
+  }
+  
+  .hero-banner {
+    margin-top: 10px;
+  }
+  
   main{
-    height:1600px;
-    grid-gap: 85px;
+    width: 100%
+  }
+  
+  .about, .Work, .Contact {
+    font-size: 40px;
+  }
+  
+  .About-Me p, .Contact-Me p{
+    padding-left: 10px;
+    padding-right: 15px;
   }
 
-  .about, .Work, .contact{
-    text-align: right;
-    border-right: 4px solid #000;
-    font-size: 10px;
+}
+
+@media (max-width: 860px){ /* 860 viewport */
+  
+  .header {
+    padding-top: 10px; 
+  }
+  
+  .Logo-text{
+    font-size: 35px;
+    left:2%;
+    top: 15px;
+    width: 350px;
+    padding: 0px 25px 5px 15px;
+  }
+
+  header div{
+    width: 400px;
+    height: 75px;
+  }
+
+  .Logo-text a:hover{
+    font-size: 38px;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .hero-banner {
+    margin-top: 1px; 
+  }
+
+  .hero-banner div h2{
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .about, .Work, .Contact {
+    font-size: 30px;
+  }
+
+  .About-Me p, .Contact-Me p{
+    padding-right: 10px;
+  }
+    
+}
+
+@media (max-width: 400px){ /* 400 viewport */
+
+  .Logo-text{
+    font-size: 25px;
+    left:2%;
+    top: 15px;
+    width: 350px;
+    padding: 0px 25px 5px 15px;
+  }
+
+  header div{
+    width: 250px;
+  }
+  .hero-banner div h2{
+    bottom: 70px; 
+  }
+
+  .about, .Work{
+    font-size: 13px;
+  }
+
+  .Contact{
+    font-size:9px;
   }
 
   #Section1{
@@ -540,6 +474,33 @@ main{
 
   #Section3{
     grid-template-columns: 15% 85%;
+  }
+
+  main{
+    width: 100%;
+    height:700px;
+    grid-gap: 70px;
+  }
+
+  .About-Me p, .Contact-Me p{
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 7px;
+  }
+
+  .about h2, .Work h2, .Contact h2{
+    padding-right: 8px;
+    align-items: left;
+    font-size: 15px;
+  }
+
+  .Contact h2{
+    font-size:13px;
+  }
+
+  .Work-section{
+    padding-left: 5px;
+    padding-right: 0px;
   }
 
 }
