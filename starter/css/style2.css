@@ -505,7 +505,7 @@ main{ /* About me, work, contact me section */
 
 }
 
-@media (max-width: 300px){ /*Mobile*/
+@media (max-width: 300px){ /*Mobile Iphone SE spported*/
   main{
     height:500px;
     grid-gap: 2px;
