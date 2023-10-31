@@ -504,3 +504,24 @@ main{ /* About me, work, contact me section */
   }
 
 }
+
+@media (max-width: 300px){ /*Mobile*/
+  main{
+    height:500px;
+    grid-gap: 2px;
+    width: 200;
+  }
+
+  .about h2, .Work h2, .Contact h2{
+    font-size: 12px;
+  }
+  
+  section.hero-banner{
+    margin: 0px;
+  }
+
+  .About-Me p, .Contact-Me p{
+    width: 150px;
+  }
+
+}
