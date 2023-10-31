@@ -41,6 +41,10 @@ The following image shows the web application's appearance and functionality:
 
 Videos are also available in the images folder.
 
+ive URL: https://estherakingbehin.github.io/edXBC-c2-HCG-OA-portfolio/
+
+Repository: https://github.com/EstherAkingbehin/edXBC-c2-HCG-OA-portfolio
+
 ## Credits
 
 Omotoyosi Akingbehin
